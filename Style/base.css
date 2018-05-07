@@ -1,0 +1,609 @@
+/* General */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #EEEEEE;
+	color: black;
+    margin: auto;
+}
+
+@keyframes fadein {
+        from { opacity: 0;}
+        to   { opacity: 1; }
+}
+
+div.outermain {
+	position: relative;
+	margin-top: 0;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: auto;
+	background-color: white;
+	min-height: 100vh;
+	box-shadow: 0px 5px 10px #888888;
+}
+
+div.innermain {
+	margin-top: 52px;
+	padding-top: 61px;
+	padding-bottom: 50px;
+	margin-left: 10%;
+	margin-right: 10%;
+
+}
+
+div.innermain a {
+	color: black;
+	text-decoration: none;
+}
+
+div.innermain a:hover {
+	text-decoration: underline; 
+}
+
+img.listbutton {
+	padding: 1px;
+	height: 20px;
+	width: 20px;
+}
+
+.error {
+	color: red;
+	font-size: 80%;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.submitError {
+	color: red;
+	font-size: 80%;
+	font-weight: bold;
+	margin: 5px 11px;
+}
+
+/* Login Page */
+
+body#loginpage {
+    background-color: #56BC8A;
+	animation: fadein 2s;
+}
+
+div#logo {
+    padding: 15px;
+    
+    text-align: center;
+}
+
+div#center {
+    position: relative;
+    margin: auto;
+    width: 1440px;
+        
+}
+
+p.signup {
+	min-height: 15px;
+	margin-top: 0;
+}
+
+p.signup.error {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+div.signup.error {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.signup.error ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+div#background {
+    position: absolute;
+    z-index: -1; 
+    left:  0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#background img {
+	max-width: 1440px;
+	max-height: 1080px;
+	height: 100vh;
+	width: 100vw;
+}
+
+div#tagline {
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+    color: white;
+}
+	
+div#login {
+	text-align: center;
+    border-style: none;
+}
+
+div#about h1 {
+    text-align: center;
+    color: white;
+}
+
+div#top {
+    min-height: 100vh;
+}
+
+div#about { 
+   
+    color: white;
+    width: 50em;
+    margin: auto;
+	text-align: center;
+}
+
+/* Form Settings */
+
+fieldset {
+    border-style: none;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+	
+legend {
+	display: none;
+}
+
+input[type=submit] {
+    background-color: #55E4EF;
+    border-radius: 2px;
+	margin: 15px 0px 0px 15px;
+    padding: 10px 15px; 
+    border: none;
+    color: rgba(0,0,0,0.45);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+input[type=submit]:hover {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15), 0 17px 80px 0 rgba(0,0,0,0.12);
+    background-color: #3A9CA3;
+    color: white;
+    
+}
+
+input[type=submit]:focus {
+    outline-width: 0;
+    background-color: white;
+    color: black;
+}
+
+input[type=submit].add {
+    width:  auto;
+}
+
+input[type=button] {
+    background-color: #55E4EF;
+    border-radius: 2px;
+	margin: 15px 0px 0px 15px;
+    padding: 10px 15px; 
+    border: none;
+    color: rgba(0,0,0,0.45);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+input[type=button]:hover {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15), 0 17px 80px 0 rgba(0,0,0,0.12);
+    background-color: #3A9CA3;
+    color: white;
+    
+}
+
+input[type=button]:focus {
+    outline-width: 0;
+    background-color: white;
+    color: black;
+}
+
+input[type=button].add {
+    width:  auto;
+	margin-left: 0;
+}
+
+input[type=email] {
+    border: 1px solid grey;
+    border-radius: 2px;
+	margin: 15px 0px 0px 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 220px;   
+}
+input[type=email]:hover {
+    transition-duration: 0.2s;
+    box-shadow: inset 0 0 8px  rgba(0,0,0,0.1);
+    
+}
+
+input[type=email]:focus {
+    transition-duration: 0.2s;
+    outline-width: 0;
+}
+
+input[type=password] {
+    border: 1px solid grey;
+    border-radius: 2px;
+	margin: 15px 0px 0px 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 220px;    
+}
+
+input[type=password]:hover {
+    transition-duration: 0.2s;
+    box-shadow: inset 0 0 8px  rgba(0,0,0,0.1);
+}
+
+input[type=password]:focus {
+    transition-duration: 0.2s;
+    outline-width: 0;
+}
+#acctSett {
+	margin: 0px;
+}
+
+input[type=text] {
+    border: 1px solid grey;
+    border-radius: 2px;
+	margin: 15px 0px 0px 15px;
+    padding: 10px 15px 10px 10px;
+    font-size: 15px;
+    width: 220px;   
+}
+input[type=text]:hover {
+    transition-duration: 0.2s; 
+}
+
+input[type=text]:focus {
+    transition-duration: 0.2s;
+    outline-width: 0;
+}
+
+#listItem {
+	margin: 0px;
+}
+
+select {
+	border: 2px white;
+	border-radius: 2px;
+	margin: 15px 0px 0px 15px;
+    padding: 10px 15px 10px 10px;
+	font-size: 1.1em;
+	width: 220px;
+}
+
+input.errBorder {
+	border: 1px solid red;
+}
+
+#acctSelect {
+	margin: 50px 0px 0px 0px;
+}
+
+#category {
+	border: 1px solid grey;
+	margin: 0px;
+}
+
+/* Account Header */
+
+ul.accheader {
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    position: fixed;
+	z-index: 1;
+    top: 0;
+	width: 100%;
+	height: 52px;
+	overflow: hidden;
+	background-color: #56BC8A;	
+	box-shadow: 0 3px 15px #888888;
+}
+
+ul.accheader li {
+	display: inline;
+	float: right;
+	text-align: center;
+}
+
+ul.accheader li a {
+	display: block;
+	width: 165px;
+	height: 52px;
+	text-decoration: none;
+	color: white;
+	font-size: 120%;
+	transition: .25s;
+}
+
+ul.accheader li a:hover {
+	background-color: #4DA87C;
+	color: white;
+}
+
+li.right a {
+	padding: 15px 0 0 0;
+}
+
+li#hlogo {
+	float: left;
+}
+
+#name a {
+	padding: 15px 20px 0 15px;
+}
+
+/* List Header */
+
+ul.listheader {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    position: fixed;
+	width: 70%;
+	height: 20px;
+	display: table;
+	overflow: hidden;
+	background-color: white;
+
+}
+
+ul.listheader li {
+	display: table-cell;
+	text-align: center;
+	width: 32px;
+}
+
+ul.listheader li a {
+	display: block;
+    padding: 20px;
+	height: 20px;
+	text-decoration: none;
+	color: #808080;
+	font-size: 1.1em;
+    font-weight: 500;
+	text-transform: uppercase;
+	border-bottom-width: 1px;
+    border-bottom-color: #EEEEEE;
+    border-bottom-style: solid;	
+}
+
+ul.listheader li a:hover {
+	height: 18px;
+	color: #3A9CA3;
+	border-bottom-width: 3px;
+    border-bottom-color: #3A9CA3;
+	border-bottom-style: solid;
+
+}
+
+/* Account Home */
+
+ul.indent {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.indent li {
+	background-color: #b8e0cd;
+}
+
+ul.indent li a {
+	color: black;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 10px 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+ul.indent li:nth-child(odd) {
+	background-color: #95d0b4;
+}
+
+ul.indent a:hover {
+	background-color: #3a9267;
+	color: white;
+	
+}
+
+img.listbutton#listhome {
+	width: 30px;
+	height: 30px;
+	border-bottom-style: solid;
+}
+
+ul.addlist {
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	float: right;
+	margin-bottom: 20px;
+}
+
+ul.addlist li {
+	background: url(../images/add_extra_small.png) left center no-repeat;
+	padding-left: 0;
+	list-style-type: none;
+
+}
+
+ul.addlist li a {
+	display: block;
+	padding: 5px 0 5px 30px;
+	font-size: 1.35em;
+	font-weight: bold;
+	background-color: #5bbe8e;
+}
+
+ul.addlist li a:hover {
+	background-color: #3a9267;
+	color: white;
+}
+
+.events {
+	clear: both;
+}
+
+/* Add List */
+
+button#category {
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	margin-top: 5px;
+}
+
+button#category img {
+	width: 20px;
+	height: 20px;
+}
+
+/* Add Item */
+
+div#addimage {
+	width: 100px;
+	height: 72px;
+	border: 2px solid black;
+	text-align: center;
+	margin-left: 20px;
+}
+
+/* Lists */
+
+span.right {
+	float: right;
+	height: 20px;
+}
+div.list ul li {
+	padding: 5px 0px;
+	margin-right: 100px;
+}
+
+a.additem {
+	position: fixed;
+	bottom: 5%;
+	right: 20%;
+	border-radius: 50px;
+	background-color: #55E4EF;
+	box-shadow: 0px 5px 8px #888888;
+}
+
+a.additem:hover {
+	box-shadow: 0px 8px 15px #888888;
+}
+
+a.additem img {
+	width: 80px;
+	height: 80px;
+}
+
+/* Changelog */
+
+table.changelog {
+	width: 100%;
+	max-width: 700px;
+	border-collapse: collapse;
+}
+
+table.changelog td:first-child {
+	width: 60%;
+}
+
+table.changelog td:last-of-type {
+	text-align: center;
+}
+
+table.changelog thead {
+	border-bottom: 2px solid black;
+}
+
+table.changelog tr {
+	border-bottom: 1px solid #808080;
+	padding: 1px 0px;
+}
+
+table.changelog tr:last-of-type {
+	border-bottom: none;
+}
+
+/* Add Member */
+
+table.members {
+	width: 100%;
+	max-width: 600px;
+	border-collapse: collapse;
+}
+
+table.members td:first-child {
+	width: 50%;
+}
+
+table.members td:last-of-type {
+	text-align: center;
+}
+
+table.members thead {
+	border-bottom: 2px solid black;
+}
+
+table.members tr {
+	border-bottom: 1px solid #808080;
+	padding: 1px 0px;
+}
+
+table.members tr:last-of-type {
+	border-bottom: none;
+}
+
+/* Settings */
+
+div.list.settings {
+	width: 50%;
+}
+
+/* Add list item arrangement*/
+
+
+p#errorItemName {
+    padding-top: 28px;
+    color: red;
+    font-size: 80%;
+    display: inline;
+} 
+
+
